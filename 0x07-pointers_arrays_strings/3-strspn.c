@@ -4,6 +4,7 @@
  * _strspn - Returns the number of bytes in the initial segment of s which consist only of bytes from accept
  * @s: the string to be searched
  * @accept: to be measured
+ *
  * Return: number of bytes
  */
 
