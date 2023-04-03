@@ -1,7 +1,7 @@
-#include "main.h"
+o#include "main.h"
 
 /**
- * _strpbrk - Eunction locates the first occurrence in the string s of any of the bytes in the string accept
+ * _strpbrk - Function searches a string for any byte sets
  * @s: string to be searched
  * @accept: string to search from
  * Return: if set matches a pointer, if not NULL.
