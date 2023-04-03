@@ -5,7 +5,7 @@
  * @s: the string to be searched
  * @accept: to be measured
  *
- * Return: number of bytes in s which consist of accept bytes
+ * Return: Number of bytes in s which consist of accept bytes
  */
 
 unsigned int _strspn(char *s, char *accept)
