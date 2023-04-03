@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _strpbrk - Entry point 
- * @s: string to be searched
- * @accept: string to search from
- * Return: if set matches a pointer, if not NULL.
+ *_strpbrk - Entry point
+ *@s: string to be searched
+ *@accept: string to search from
+ *Return: if set matches a pointer, if not NULL.
  */
 
 char *_strpbrk(char *s, char *accept)
