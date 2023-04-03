@@ -6,7 +6,7 @@
  * @s: the string to be searched
  * @c: the character to look for
  *
- * Return: if found return s + i, else print NULL.
+ * Return: If found return s + i, else print NULL.
  */
 
 char *_strchr(char *s, char c)
