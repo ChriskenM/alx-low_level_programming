@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strpbrk - Function searches a string for any byte sets
+ * _strpbrk - Entry point 
  * @s: string to be searched
  * @accept: string to search from
  * Return: if set matches a pointer, if not NULL.
