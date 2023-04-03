@@ -2,12 +2,11 @@
 
 /**
  * _memset - fill a block of memory with a specific value
- * 
- * @s: A pointer to the memory area to be filled.
- * @c: The character to fill the memory.
- * @n: The number of bytes to be filled.
+ * @s: starting address of memory to be filled
+ * @b: the desired value
+ * @n: number of bytes to be changed
  *
- * Return: A pointer to the filled memory area @s.
+ * Return: changed array with new value for n bytes
  */
 
 char *_memset(char *s, char b, unsigned int n)
