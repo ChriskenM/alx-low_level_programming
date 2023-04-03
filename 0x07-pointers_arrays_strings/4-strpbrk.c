@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- *_strpbrk - Entry point
- *@s: string to be searched
- *@accept: string to search from
- *Return: Always 0 (success)
+ * _strpbrk - Entry point
+ * @s: input
+ * @accept: input
+ * Return: Always 0 (Success)
  */
 
 char *_strpbrk(char *s, char *accept)
