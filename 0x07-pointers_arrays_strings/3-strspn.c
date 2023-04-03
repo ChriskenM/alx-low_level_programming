@@ -1,12 +1,13 @@
 #include "main.h"
 
 /**
- * _strspn - Returns the number of bytes in the initial segment of s which consist only of bytes from accept
- * @s: the string to be searched
- * @accept: to be measured
+ * _strspn - Entry point
+ * @s: input
+ * @accept: input
  *
- * Return: Number of bytes in s which consist of accept bytes
+ * Return: Always 0 (Success)
  */
+
 
 unsigned int _strspn(char *s, char *accept)
 {
