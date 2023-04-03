@@ -5,6 +5,7 @@
  * @s: pointer to buffer
  * @n: number of bytes to be filled
  * @c: char to fill the area
+ *
  * Return: a pointer to the memory area.
  */
 
