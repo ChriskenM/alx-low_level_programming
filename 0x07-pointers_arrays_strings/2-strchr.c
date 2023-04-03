@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *_strchr - Returns a pointer to the first occurrence of the character c in the string s,
+ *_strchr - Entry point
  * or NULL if the character is not found.
  *@s: the string to be searched
  *@c: the character to look for
