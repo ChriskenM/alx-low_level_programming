@@ -3,7 +3,7 @@
 /**
  *factorial - returns the factorial of a given number.
  *@n: factorial to be checked
- *@output: the result
+ *@output: the result of factoring
  *
  *Return: -1 to indicate an error
  */
