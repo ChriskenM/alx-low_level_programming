@@ -27,7 +27,7 @@ int main(void)
 
 #include <stdio.h>
 
-int is_palindrome(char *);
+int is_palindrome(char *s);
 
 /**
  * main - check the code for Holberton School students.
