@@ -57,7 +57,7 @@ int is_palindrome(char *s)
 
 	int length = find_strlen(s);
 
-	if (!(*S))
+	if (*S == '\0')
 	{
 		return (1);
 	}
