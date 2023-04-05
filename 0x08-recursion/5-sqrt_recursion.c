@@ -13,11 +13,11 @@ int _sqrt_recursion(int n);
 
 int find_sqrt(int i, int root)
 {
-	if (( root * root) == i)
+	if ((root * root) == i)
 	{
 		return (root);
 	}
-	if (root == i/2)
+	if (root == i / 2)
 	{
 		return (-1);
 	}
