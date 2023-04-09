@@ -6,6 +6,8 @@
  *main - multiplies two numbers
  *@mut: the multiple
  *@i: the int  to be multiplied
+ *@argc: argument count
+ *@argv: a vector of strings
  *
  *Return: 1 if argc < 1
  */
@@ -18,7 +20,7 @@ int main(int argc, char *argv[])
 	{
 		for (i = 0; i < argc; i++)
 		{
-			mut = mut * atoi(argv[i]);
+			mut = atoi(argv[i]) * atoi(argv[i]);
 		}
 		printf("%d\n", mut);
 	}
