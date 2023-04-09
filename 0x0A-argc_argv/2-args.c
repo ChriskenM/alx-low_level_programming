@@ -4,6 +4,8 @@
 
 /**
  *main -  prints all arguments it receives
+ *@argc: argument counter
+ *@argv: a string vector
  *
  *Return: Always 0 (successful)
  */
