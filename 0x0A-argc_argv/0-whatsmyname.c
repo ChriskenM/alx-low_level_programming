@@ -9,7 +9,7 @@
  *Return: Always 0 (successful)
  */
 
-int main(int argc _attribute_((unused)), char *argv[])
+int main(int argc, char *argv[])
 {
 	(void)argc;
 
