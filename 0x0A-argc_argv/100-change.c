@@ -6,6 +6,8 @@
  *main - prints minimum ammounts of coins to make change
  *@argc: argument counter
  *@argv: a string vector
+ *@cents: the change subtract
+ *@atoi: turns char to int
  *
  *Return: -1 if number of arguments aint exact 1 else 0
  */
