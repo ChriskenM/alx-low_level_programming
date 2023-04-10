@@ -6,8 +6,6 @@
  *main - prints minimum ammounts of coins to make change
  *@argc: argument counter
  *@argv: a string vector
- *@cents: the change subtract
- *@atoi: turns char to int
  *
  *Return: -1 if number of arguments aint exact 1 else 0
  */
@@ -17,7 +15,7 @@ int main(int argc, char *argv[])
 	int cents;
 	int coins = 0;
 
-	if (argc == 1 || argc >2)
+	if (argc == 1 || argc > 2)
 	{
 		printf("Error\n");
 		return (1);
