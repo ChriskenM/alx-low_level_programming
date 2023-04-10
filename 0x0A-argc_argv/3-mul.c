@@ -1,10 +1,9 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
 
 /**
  *main - multiplies two numbers
- *@mut: the multiple
- *@i: the int  to be multiplied
  *@argc: argument count
  *@argv: a vector of strings
  *
