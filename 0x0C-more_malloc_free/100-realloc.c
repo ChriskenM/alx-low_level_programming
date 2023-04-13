@@ -6,6 +6,7 @@
  *_realloc - reallocates a memory block using malloc and free
  *@old_size: the allocated space for ptr(bytes)
  *@new_size: new size for new memory block
+ *@ptr: pointer to the previously allocated memory
  *
  *Return: NULL
  */
@@ -37,7 +38,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < old_size; && i < new_size; i++)
+	for (i = 0; i < old_size; &&i < new_size; i++)
 	{
 		cptr[i] = ((char *)ptr)[i];
 	}

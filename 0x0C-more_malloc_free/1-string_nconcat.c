@@ -3,16 +3,17 @@
 
 /**
  *string_nconcat - concatenates two strings.
- *@S1: string to concatenate
- *s2: string to concatenate
+ *@s1: string to concatenate
+ *@s2: string to concatenate
+ *@n: int count
  *
  *Return: if it fails return NULL
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int i = 0, j = 0;
-	int a = 0, b = 0;
+	unsigned int i = 0, j = 0;
+	unsigned int a = 0, b = 0;
 	char *s;
 
 	while (s1[i])
