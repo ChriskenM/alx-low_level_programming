@@ -26,6 +26,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		;
 	for (Towner = 0; name[Tname]; Tname++)
 		;
+
 	bull_dog->name = malloc(Tname + 1);
 	bull_dog->owner = malloc(Towner + 1);
 
@@ -48,3 +49,4 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	return (bull_dog);
 }
+
