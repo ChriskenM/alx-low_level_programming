@@ -6,6 +6,6 @@
  *@x: integer to calculate as absolute
  */
 
-#define ABS(x) ((x) < (0) ? (-x) : (x))
+#define ABS(x) ((x) < (0) ? ((x) * (-1)) : (x))
 
 #endif
