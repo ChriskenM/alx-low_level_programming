@@ -5,6 +5,6 @@
  *pi_h - defines a macro named PI
  */
 
-#define PI 3.141599265359
+#define PI 3.14159265359
 
 #endif
