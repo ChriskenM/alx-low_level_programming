@@ -4,7 +4,7 @@ A function pointer is a pointer that points to a function it points to code not 
 # Technologies
 Consist of files in **C** andh some header files
 Compiled by **gcc**
-Some file decompiled by **udis86**
+
 
 # files:
 
