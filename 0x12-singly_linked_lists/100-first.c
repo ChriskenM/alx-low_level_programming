@@ -9,6 +9,6 @@ void begin(void) __attribute__ ((constructor));
 
 void begin(void)
 {
-	printf("You're beat! and yet, you must allow,");
-	printf("I bore my house upon my back!");
+	printf("You're beat! and yet, you must allow,\n");
+	printf("I bore my house upon my back!\n");
 }
