@@ -56,7 +56,7 @@ size_t free_listint_safe(listint_t **h)
 		while (sum->next != NULL)
 		{
 			sum = sum->next;
-			if(*h == sum->p)
+			if (*h == sum->p)
 			{
 				*h = NULL;
 				free_listp2(&hptr);
