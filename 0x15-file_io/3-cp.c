@@ -29,20 +29,20 @@ int main(int argc, char **argv)
 
 void copy_file(const char *src, const char *dest)
 {
-	int ofn, tfn, readn;
+	int fd, tfd, readn;
 	char buff[1024];
 
-	ofn = open(src, O_RDONLY);
-	if (!src || ofn == -1)
+	fd = open(src, O_RDONLY);
+	if (!src || fd == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", src);
 		exit(98);
 	}
 
-	tfn = open(dest, O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	while ((readn = read(ofn, buff, 1024)) > 0)
+	tfd = open(dest, O_CREAT | O_WRONLY | O_TRUNC, 0664);
+	while ((readn = read(fd, buff, 1024)) > 0)
 	{
-		if (write(tfn, buff, readn) != readn || tfn == -1)
+		if (write(tfd, buff, readn) != readn || tfd == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", dest);
 			exit(99);
@@ -53,14 +53,14 @@ void copy_file(const char *src, const char *dest)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", src);
 		exit(98);
 	}
-	if (close(ofn) == -1)
+	if (close(fd) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fn %d\n", ofn);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(100);
 	}
-	if (close(tfn) == -1)
+	if (close(tfd) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fn %d\n", tfn);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", tfd);
 		exit(100);
 	}
 }
