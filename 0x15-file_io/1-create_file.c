@@ -3,7 +3,7 @@
 /**
  *create_file - creates a filr
  *@filename: name of the source file
- *@text_content - string to write into filename
+ *@text_content: string to write into filename
  *
  *Return: 1 on success, -1 on failure
  *(file can not be created, file can not be written, write “fails”, etc…)
@@ -23,7 +23,7 @@ int create_file(const char *filename, char *text_content)
 	if (text_content)
 		write(fn, text_content, _strlen(text_content));
 
-	close (fn);
+	close(fn);
 	return (1);
 }
 
