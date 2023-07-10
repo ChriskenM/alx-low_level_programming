@@ -35,7 +35,7 @@ void copy_file(const char *src, const char *dest)
 	fd = open(src, O_RDONLY);
 	if (!src || fd == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: can't read from file %s\n", src);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", src);
 		exit(98);
 	}
 
@@ -44,23 +44,23 @@ void copy_file(const char *src, const char *dest)
 	{
 		if (write(tfd, buff, readn) != readn || tfd == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: can't write to %s\n", dest);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", dest);
 			exit(99);
 		}
 	}
 	if (readn == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: can't read from file %s\n", src);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", src);
 		exit(98);
 	}
 	if (close(fd) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: can't close fd %d\n", fd);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(100);
 	}
 	if (close(tfd) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: can't close fd %d\n", tfd);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", tfd);
 		exit(100);
 	}
 }
