@@ -1,0 +1,65 @@
+#include "main.h"
+
+/**
+ * main - entry
+ * @argc: argument counter
+ * @argv: argument vector
+ *
+ * Return: nothing
+ */
+
+int main(int argc, char **argv)
+{
+	if (argc != 3)
+	{
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+		exit(97);
+	}
+	copy_file(argv[1], argv[2]);
+	exit(0);
+}
+
+/**
+ * copy_file - copies to file_to
+ * @src: source file
+ * @dest: destination file
+ *
+ * Return: nothing
+ */
+
+void copy_file(const char *src, const char *dest)
+{
+	int fd, tfd, readn;
+	char buff[1024];
+
+	fd = open(src, 0_RDONLY);
+	if (!src || fd == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: can't read from file %s\n", src);
+		exit(98);
+	}
+	tfd = open(dest, 0_CREAT | 0_WRONLY | 0_TRUNC, 0664);
+	while ((readn = read(fd, buff, 1024)) > 0)
+	{
+		if (write(tfd, buff, readn) != readn || tfd == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: can't write to %s\n", dest);
+			exit(99);
+		}
+	}
+	if (readn == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: can't read from file %s\n", src);
+		exit(98);
+	}
+	if (close(fd) == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: can't close fd %d\n", fd);
+		exit(100);
+	}
+	if (close(tfd) == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: can't close fd %d\n", tfd);
+		exit(100);
+	}
+}
