@@ -32,13 +32,14 @@ void copy_file(const char *src, const char *dest)
 	int fd, tfd, readn;
 	char buff[1024];
 
-	fd = open(src, 0_RDONLY);
+	fd = open(src, O_RDONLY);
 	if (!src || fd == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: can't read from file %s\n", src);
 		exit(98);
 	}
-	tfd = open(dest, 0_CREAT | 0_WRONLY | 0_TRUNC, 0664);
+
+	tfd = open(dest, O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	while ((readn = read(fd, buff, 1024)) > 0)
 	{
 		if (write(tfd, buff, readn) != readn || tfd == -1)
