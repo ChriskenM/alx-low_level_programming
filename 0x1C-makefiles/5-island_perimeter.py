@@ -3,6 +3,7 @@
 script to get island's perimeter
 """
 
+
 def island_perimeter(grid):
     """ Function returns the perimeter of island in grid """
     perimeter = 0
